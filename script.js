@@ -76,7 +76,6 @@ function checkCollision() {
     for (let i = 0; i < obstacles.length; ++i) {
         let obstacle = obstacles[i];
         if (airplane.x < obstacle.x + 1 && airplane.x + 2 > obstacle.x && airplane.y < obstacle.y + 1 && airplane.y + 2 > obstacle.y) {
-            console.log("Collision detected. Game Over!");
             clearInterval(interval);
             gameOverScreen();
             
