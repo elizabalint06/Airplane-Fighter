@@ -77,6 +77,7 @@ function isColliding(obj1, obj2) {
         obj1.y + 2 > obj2.y
     );
 }
+
 function checkCollision() {
     for (let i = 0; i < obstacles.length; ++i) {
         let obstacle = obstacles[i];
