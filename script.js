@@ -18,7 +18,7 @@ let interval;
 let score = 0;
 let timer = 0;
 let projectiles = [];
-
+// TEST
 function startGame() {
     document.addEventListener("keydown", keyPressed);
     airplaneImage = new Image();
