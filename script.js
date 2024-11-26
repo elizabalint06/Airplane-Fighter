@@ -1,5 +1,5 @@
-const TOTAL_BLOCKS = 24;
-const BLOCK_SIZE = 24;
+const TOTAL_BLOCKS = 25;
+const BLOCK_SIZE = 25;
 const NUM_OBSTACLES = 10;
 
 const LEFT = 37;
@@ -92,7 +92,6 @@ function shootProjectile() {
         speed: 2
     });
 }
-
 
 function isColliding(obj1, obj2) {
     return (
