@@ -17,11 +17,11 @@ const COLLISION_HEIGHT = 2;
 const INTERVAL = 50;
 const SCORE_X = 10;
 const SCORE_Y = 30;
-const GAME_OVER_TEXT= 150;
+const GAME_OVER_TEXT = 150;
 
 const LEFT = 37;
 const RIGHT = 39;
-const SPACE =  32;
+const SPACE = 32;
 const SECOND = 1000;
 
 const gameBoard = document.getElementById("gameBoard");
