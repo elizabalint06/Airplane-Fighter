@@ -102,7 +102,8 @@ function updateObjects(objects, updateFn) {
         if (obstacle.y * BLOCK_SIZE > gameBoard.height) {
             obstacle.y = 0;
             obstacle.x = Math.floor(Math.random() * TOTAL_BLOCKS);
-            obstacle.speed = MIN_OBSTACLE_SPEED + Math.random() * OBSTACLE_SPEED_RESET;
+            obstacle.speed = MIN_OBSTACLE_SPEED 
+                + Math.random() * OBSTACLE_SPEED_RESET;
         }
     });
 }
@@ -110,7 +111,6 @@ function updateObjects(objects, updateFn) {
 function updateProjectiles() {
     updateObjects(projectiles, function (projectile, index, array) {
         projectile.y -= projectile.speed;
-        
     });
 }
 
@@ -149,7 +149,8 @@ function destroyObstacle() {
             if (isColliding(projectile, obstacle)) {
                 obstacle.y = 0;
                 obstacle.x = Math.floor(Math.random() * TOTAL_BLOCKS); 
-                obstacle.speed = MIN_OBSTACLE_SPEED + Math.random() * OBSTACLE_SPEED_RESET; 
+                obstacle.speed = MIN_OBSTACLE_SPEED 
+                    + Math.random() * OBSTACLE_SPEED_RESET;
                 projectiles.splice(j, 1);
                 ++score;
                 break;
@@ -161,7 +162,7 @@ function destroyObstacle() {
 function print(object, image, scale = 1) {
     ctx.drawImage(
         image,
-         object.x * BLOCK_SIZE, 
+        object.x * BLOCK_SIZE, 
         object.y * BLOCK_SIZE, 
         BLOCK_SIZE * scale, BLOCK_SIZE * scale
     );
